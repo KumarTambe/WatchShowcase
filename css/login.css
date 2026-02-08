@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height:100vh;
+    /* background: radial-gradient(100% 100% at 20% 80%, #3cc2dd 0%, transparent),
+    radial-gradient(100% 100% at 80% 20%, #00FAA7 0%, transparent),#1b253b; */
+    background: linear-gradient(-45deg, #87CEFA, #1E3A8A, #00BFFF, #0D47A1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    height:500px;
+    width: 400px;
+    border-radius: 9px;
+    background-color: lightcyan;
+    padding: 0 25px 0 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+form .heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form input {
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px;
+
+}
+
+form button {
+    padding: 10px;
+    width: 25%;
+    margin-left: 150px;
+    margin-top: 15px;
+    background-color:#3cc2dd;
+    border-style: none;
+    border-radius: 8px;
+}
+
+.login-btn:hower {
+    color: white;
+    background-color: blue;
+}
+
+form .para{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+form .signUp-btn {
+    text-decoration: none;
+}
